@@ -45,7 +45,7 @@
       "value": "${AZURE_DOCUMENTINTELLIGENCE_SKU=S0}"
     },
     "documentIntelligenceResourceGroupLocation": {
-      "value": "${AZURE_DOCUMENTINTELLIGENCE_LOCATION}"
+      "value": "${AZURE_DOCUMENTINTELLIGENCE_LOCATION=eastus}"
     },
     "searchIndexName": {
       "value": "${AZURE_SEARCH_INDEX=gptkbindex}"
@@ -246,10 +246,13 @@
       "value": "${USE_LOCAL_HTML_PARSER}"
     },
     "runningOnGh": {
-      "value": "${GITHUB_ACTIONS}"
+      "value": "${GITHUB_ACTIONS=true}"
     },
     "runningOnAdo": {
       "value": "${TF_BUILD}"
+    },
+    "openAiResourceGroupLocation": {
+      "value": "${AZURE_OPENAI_LOCATION=eastus}"
     }
   }
 }
